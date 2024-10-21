@@ -31,11 +31,11 @@ Alt & Q::
     ; Create GUI
 	
        CommandGui := Gui("+AlwaysOnTop -Caption +Border")
-	     ; +AlwaysOnTop - Keeps the window above all other windows	  
+	 ; +AlwaysOnTop - Keeps the window above all other windows	  
          ; -SysMenu - Removes system menu. Prevents minimizing, maximizing, and closing	 
-	     ; +ToolWindow - Creates tool window that does not appear in the taskbar
-		 ; -Caption - Hides the title bar of the window
-		 ; +Border - Adds a standard border to the GUI window
+	 ; +ToolWindow - Creates tool window that does not appear in the taskbar
+         ; -Caption - Hides the title bar of the window
+         ; +Border - Adds a standard border to the GUI window
        CommandGui.SetFont("s16 bold", "Source Code Pro") ; Size 16, bold
        CommandGui.BackColor := "0x1C1C1C"  ; Dark Gray Background Color
 	   
