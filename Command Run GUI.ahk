@@ -8,7 +8,7 @@
 
 global CommandGui  ; Declare CommandGui as a global variable
    
-Alt & Z::
+Alt & Q::
   { 
     ShowCommandGui() 
        } ; Show Input GUI
