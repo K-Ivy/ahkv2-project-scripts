@@ -63,16 +63,32 @@ Alt & Q::
        CommandGui.Show("w" GuiWidth " h" GuiHeight) ; Show the GUI.
     
     ; Focus on the input field automatically
-    CommandEdit.Focus()
+       CommandEdit.Focus()
+	
+	; Enable dragging the GUI
+       EnableGuiDrag(CommandGui.Hwnd)
 	
 	; When ESC is pressed, destroy the GUI
        CommandGui.OnEvent("Escape", DestroyGui)
+  }
 	
-	      DestroyGui(*) {
-           CommandGui.Destroy()
-        }
+	; Gui Destroy 
+	   DestroyGui(*) {
+       CommandGui.Destroy()
+    }
+	   
+    ; Function to enable dragging the GUI
+       EnableGuiDrag(hwnd) {
+       ; Set up to capture left mouse button down (WM_LBUTTONDOWN = 0x0201)
+       OnMessage(0x0201, (wParam, lParam, msg, hwnd) => StartDrag(hwnd))
     }
 
+    ; Function to start dragging the GUI
+       StartDrag(hwnd) {
+       ; Send a message to make the window draggable
+       DllCall("PostMessage", "Ptr", hwnd, "UInt", 0xA1, "Ptr", 2, "Ptr", 0)  ; 0xA1 is WM_NCLBUTTONDOWN, 2 is HTCAPTION
+    }
+	
 ;---------------------------;
 ; Defined Phrases ;
 ;---------------------------;
