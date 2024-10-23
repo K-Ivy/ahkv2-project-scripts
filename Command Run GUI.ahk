@@ -1,27 +1,27 @@
-﻿;--------------------------------------------------------------------------
+;--------------------------------------------------------------------------
 ; Command Run GUI                                                         ;
 ;--------------------------------------------------------------------------
 
 ; When 'Alt + Q' is pressed, a gui to type in text will appear
 ; When you type in a predefined word/phrase and press enter, 
-; it will run the associated string/command. Add at the bottom.
+; it will run the associated command(s). Add at the bottom.
 
 global CommandGui  ; Declare CommandGui as a global variable
    
-Alt & Q::
+Alt & Z::
   { 
     ShowCommandGui() 
-       } ; Show Input GUI
+       }
   
      ShowCommandGui() {
-      global CommandGui  ; Access the global CommandGui variable
+      global CommandGui 
     
     ; Destroy any existing GUI first
     ; Check if CommandGui is set and is an object before destroying 
 
 	   if (IsSet(CommandGui) && IsObject(CommandGui)) {
         CommandGui.Destroy() 
-		}
+	   }
 	   
 	; Set GUI dimensions
 	
@@ -31,15 +31,13 @@ Alt & Q::
     ; Create GUI
 	
        CommandGui := Gui("+AlwaysOnTop -Caption +Border")
-	 ; +AlwaysOnTop - Keeps the window above all other windows	  
-         ; -SysMenu - Removes system menu. Prevents minimizing, maximizing, and closing	 
-	 ; +ToolWindow - Creates tool window that does not appear in the taskbar
-         ; -Caption - Hides the title bar of the window
-         ; +Border - Adds a standard border to the GUI window
+	     ; +AlwaysOnTop - Keeps the window above all other windows	  
+		 ; -Caption - Hides the title bar of the window
+		 ; +Border - Adds a standard border to the GUI window
        CommandGui.SetFont("s16 bold", "Source Code Pro") ; Size 16, bold
        CommandGui.BackColor := "0x1C1C1C"  ; Dark Gray Background Color
 	   
-           InputYPos := (GuiHeight / 2) - 80  ; Y position (adjust this for centering)	   
+           InputYPos := (GuiHeight / 2) - 80
 
     ; 'Title Text'
 	
@@ -55,7 +53,7 @@ Alt & Q::
 		 
     ; Add a hidden button to capture the Enter key event
 	
-       CommandButton := CommandGui.Add("Button", "x-999 y-999 Default")  ; Hidden button
+       CommandButton := CommandGui.Add("Button", "x-999 y-999 Default") 
 	  
         ; Set event for button click (Enter key)
            CommandButton.OnEvent("Click", (*) => RunCommand(CommandEdit, CommandGui))
@@ -74,7 +72,7 @@ Alt & Q::
     }
 
 ;---------------------------;
-; Defined Phrases/Commands ;
+; Defined Phrases ;
 ;---------------------------;
 
 RunCommand(CommandEdit, CommandGui) {
@@ -83,56 +81,26 @@ RunCommand(CommandEdit, CommandGui) {
     ; Match the entered text and run the corresponding commands
     switch enteredText {
 		
-        case "guiex": ; GUI Example
-            CreateTestGui()  ; Call a function to create a new GUI
+        case "guiex": ; GUI Test 1
+            ;CreateTestGui()  ; Calling a function
 			CommandGui.Destroy() ; Destroy input gui
 			
-		; Commenting as I am not providing the gui	
         ; case "guiex 2": ; GUI Test 2
         ;    CreateTestGui2()  ; Testing diff type
-		;	CommandGui.Destroy() ; Destroy input gui			
+		;	CommandGui.Destroy()		
 			
-        case "calcex": ; Run Example
+        case "calc":
             Run("calc.exe")
-			CommandGui.Destroy() ; Destroy input gui				
+			CommandGui.Destroy()		
 			
-        ; default: ; to define what happens if unknown phrase/command entered. Currently does nothing.
-        ;    FutureSomething()  ; No interuptions at all seems better atm. 
+        ; default: ; to do something if an unknown phrase is entered. Currently does nothing.
+        ;   FutureSomething[]  ; No interuptions/popups at all seems better atm. 
 		
     }
-
-    ; If to Destroy Input GUI after every action (command), not specific- 
-	; -(by adding the destroy on every case. remove those if this is to be used)
-    ; CommandGui.Destroy()
+	
+    ; CommandGui.Destroy() ; If to Destroy Input GUI after every action. Use if dont want it specified in cases.
 	
 }
 
-
 /* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* */
 /* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* */
-
-;----------------------------;
-; Calls ; for Command Run GUI ;
-;----------------------------;
-
-CreateTestGui() {   
-  ; Create GUI
-     TestGUI := Gui("+AlwaysOnTop -Caption +Border")
-     TestGUI.BackColor := "0x1C1C1C" ; Dark Gray Background Color
-
-  ; Define GUI dimensions
-     GuiWidth := 500
-     GuiHeight := 300
-
-  ; Title Text
-     TestGUI.SetFont("s28 bold", "Source Code Pro")
-	 TestGUI.Add("Text", "Center cWhite", "Hey, Testing o7")
-     TestGUI.Add("Text", "Center cWhite", "010101010...")
-
-  ; Show the window with defined width and height
-     TestGUI.Show("w" GuiWidth " h" GuiHeight)
-	 
-  ; Close the GUI on Escape
-    TestGUI.OnEvent("Escape", (*) => TestGUI.Destroy())
-
-  }
