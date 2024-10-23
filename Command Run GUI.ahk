@@ -97,6 +97,7 @@ RunCommand(CommandEdit, CommandGui) {
     enteredText := CommandEdit.Value
 
     ; Match the entered text and run the corresponding commands
+    ; You can have spaces. Throw em' in if needed. EX: "Calc 2 2 2" 
     switch enteredText {
 			
         ; case "?": ; Command Keybinds Help/List
