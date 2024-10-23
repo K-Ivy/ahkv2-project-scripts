@@ -5,4 +5,4 @@ Small Input GUI script that allows you to run defined commands/code by typing in
 - Using Source Code Pro for font: https://fonts.google.com/specimen/Source+Code+Pro
 - Does not have a Keybind List currently. Working on something, not sure if I'll share. So '?' does nothing currently.
 - Only provided the necessary example(s) to reference and create more.
-- Made since I found no v2 of (https://github.com/plul/Public-AutoHotKey-Scripts) and something simole to edit.
+- Made since I found no v2 of (https://github.com/plul/Public-AutoHotKey-Scripts) and something simple to edit.
