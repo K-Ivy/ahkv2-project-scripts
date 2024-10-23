@@ -23,7 +23,7 @@ Alt & Q::
         CommandGui.Destroy() 
 	   }
 	   
-	; Set GUI dimensions
+	; GUI dimensions
 	
        GuiWidth := 340  
        GuiHeight := 160  
@@ -43,7 +43,7 @@ Alt & Q::
 	
        CommandGui.Add("Text", "x0" " w" GuiWidth " Center c0xd8ccce", "Type Command")
 	   
-    ; Add 'Input Field' for typing commands
+    ; Add 'Input Field' for typing in phrases
 	
        CommandEdit := CommandGui.Add("Edit", "x20 y" (InputYPos + 53) " w300 h38 Center c0xdfdada vCommandEdit Background0x5f4548")
 		 
@@ -80,20 +80,19 @@ RunCommand(CommandEdit, CommandGui) {
 
     ; Match the entered text and run the corresponding commands
     switch enteredText {
-		
-        case "guiex": ; GUI Test 1
-            ;CreateTestGui()  ; Calling a function
-			CommandGui.Destroy() ; Destroy input gui
 			
-        ; case "guiex 2": ; GUI Test 2
-        ;    CreateTestGui2()  ; Testing diff type
-		;	CommandGui.Destroy()		
+        ; case "?": ; Command Keybinds Help/List
+        ; CommandRunBindHelp()		
+
+        ; case "guiex": ; GUI Test 1
+        ; CreateTestGui()  ; Calling a function
+	; CommandGui.Destroy() ; Destroy input gui
 			
         case "calc":
-            Run("calc.exe")
-			CommandGui.Destroy()		
+        Run("calc.exe")
+	CommandGui.Destroy()		
 			
-        ; default: ; to do something if an unknown phrase is entered. Currently does nothing.
+        ; default: ; If to do something if an unknown phrase is entered. Currently does nothing.
         ;   FutureSomething[]  ; No interuptions/popups at all seems better atm. 
 		
     }
