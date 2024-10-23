@@ -6,5 +6,9 @@ Small Input GUI script that allows you to run defined commands/code by typing in
 
 
 
-https://github.com/user-attachments/assets/974b3546-8536-4cea-9185-aa427f2aa888
+
+
+https://github.com/user-attachments/assets/b9345e5f-f6cc-44d6-93a4-f8f6cc59db7f
+
+
 
