@@ -13,8 +13,9 @@ Notepad++ AutoHotKey Syntax Highlighing.
 - Edited (https://www.autohotkey.com/boards/viewtopic.php?f=88&t=50)
 - Made for darker themes/backgrounds so probably wont look good on light/white backgrounds. 
 --- I'm using: https://github.com/nordtheme/notepadplusplus
---- It's very easy to edit the colors or add. Note at the end o7
+--- It's very easy to edit the colors. Open .xml with editor and it will be self explanatory. Look at the bottom.
 - The Vid below isn't the best. But shows enough for the style of it. Adjustments will be made as I use it.
-https://github.com/user-attachments/assets/d5cad584-63a7-4261-9acd-fc6403a61bbd
+
+- https://github.com/user-attachments/assets/d5cad584-63a7-4261-9acd-fc6403a61bbd
 
 
