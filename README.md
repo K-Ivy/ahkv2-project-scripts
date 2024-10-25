@@ -13,7 +13,7 @@ Notepad++ AutoHotKey Syntax Highlighing.
 - Edited (https://www.autohotkey.com/boards/viewtopic.php?f=88&t=50)
 - Made for darker themes/backgrounds so probably wont look very good on light/white backgrounds. 
 --- I'm using: https://github.com/nordtheme/notepadplusplus
---- Still finilizing.
+- Still finilizing.
 
 
 
