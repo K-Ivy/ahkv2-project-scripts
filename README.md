@@ -11,7 +11,7 @@ Small Input GUI script that allows you to run defined commands/code by typing in
 ___________________________________________________________________________________________________________
 Notepad++ AutoHotKey Syntax Highlighing.
 - Edited (https://www.autohotkey.com/boards/viewtopic.php?f=88&t=50)
-- Made for darker themes/backgrounds so probably wont look very good on light/white backgrounds. 
+- Made for darker themes/backgrounds so probably wont look very good on light/white backgrounds. (haven't checked) 
 --- I'm using: https://github.com/nordtheme/notepadplusplus
 
 https://github.com/user-attachments/assets/e1c59e65-920c-4a6f-89cc-3d7696f1cd65
