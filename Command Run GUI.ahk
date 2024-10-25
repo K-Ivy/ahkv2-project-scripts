@@ -7,8 +7,6 @@
 ; When 'Alt + Q' is pressed, a gui to type in text will appear
 ; When you type in a predefined word/phrase and press enter, 
 ; it will run the associated command(s). Add at the bottom.
-
-global CommandGui  ; Declare CommandGui as a global variable
    
 Alt & Q::
   { 
