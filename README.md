@@ -17,6 +17,7 @@ Small Input GUI script that allows you to run defined commands/code by typing in
 - Made since I found no v2 of (https://github.com/plul/Public-AutoHotKey-Scripts) and something simple to edit.
 ___________________________________________________________________________________________________________
 ListView GUI with Text Wrapping and Hidden Scroll: 
+
 https://github.com/user-attachments/assets/bd5a3b4c-6d8e-4aeb-95f4-83ea7f99581e
 ___________________________________________________________________________________________________________
 
