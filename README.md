@@ -14,7 +14,7 @@ Small Input GUI script that allows you to run defined commands/code by typing in
 - Using Source Code Pro for font: https://fonts.google.com/specimen/Source+Code+Pro - If you want to use something else, you will need to either mess around with gui options or adjust the guis themselves
 - Does not have a Keybind List currently. Working on something, not sure if I'll share. So '?' does nothing currently.
 - Made since I found no v2 of (https://github.com/plul/Public-AutoHotKey-Scripts) and something simple to edit.
-- UPDATES: Updates: 
+- UPDATES:
   - Added tray items. Feel  free to remove
   - Phrase is now case-insensitive so type it however.
   - Multi Phrases
