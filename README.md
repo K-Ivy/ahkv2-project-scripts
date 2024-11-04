@@ -11,10 +11,20 @@ Small Input GUI script that allows you to run defined commands/code by typing in
 
 ![Untitledvideo-MadewithClipchamp-ezgif com-optimize (1)](https://github.com/user-attachments/assets/fce837e7-0fa5-412d-8f38-7371ec79bd76)
 
-- Using Source Code Pro for font: https://fonts.google.com/specimen/Source+Code+Pro
+- Using Source Code Pro for font: https://fonts.google.com/specimen/Source+Code+Pro - If you want to use something else, you will need to either mess around with gui options or adjust the guis themselves
 - Does not have a Keybind List currently. Working on something, not sure if I'll share. So '?' does nothing currently.
 - Made since I found no v2 of (https://github.com/plul/Public-AutoHotKey-Scripts) and something simple to edit.
-- UPDATED
+- UPDATES: Updates: 
+  > Added tray items. Feel  free to remove
+  > Phrase is now case-insensitive so type it however.
+  > Multi Phrases
+  > **Added Examples. MAIN ONE: WEB SEARCH**
+  > Allows to send searches to your browser from this GUI. Type in your search and press enter. It will search with your default browser.
+  > **Regular Search** (Normal 1 Search)
+  > **Incognito Search** (Normal 1 Incog Search)
+  > **Regular Multi Search** : Opens multiple tabs with the same search (each a different search engine. Define in that code section.
+  > **Incognito Multi Search** : Same as above but incog mode. 
+  > Plus some other MISC Examples to keep or remove
 ___________________________________________________________________________________________________________
 ListView GUI with Text Wrapping and Hidden Scroll: 
 
