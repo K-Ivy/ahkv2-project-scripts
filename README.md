@@ -15,16 +15,16 @@ Small Input GUI script that allows you to run defined commands/code by typing in
 - Does not have a Keybind List currently. Working on something, not sure if I'll share. So '?' does nothing currently.
 - Made since I found no v2 of (https://github.com/plul/Public-AutoHotKey-Scripts) and something simple to edit.
 - UPDATES: Updates: 
-  > Added tray items. Feel  free to remove
-  > Phrase is now case-insensitive so type it however.
-  > Multi Phrases
-  > **Added Examples. MAIN ONE: WEB SEARCH**
-  > Allows to send searches to your browser from this GUI. Type in your search and press enter. It will search with your default browser.
-  > **Regular Search** (Normal 1 Search)
-  > **Incognito Search** (Normal 1 Incog Search)
-  > **Regular Multi Search** : Opens multiple tabs with the same search (each a different search engine. Define in that code section.
-  > **Incognito Multi Search** : Same as above but incog mode. 
-  > Plus some other MISC Examples to keep or remove
+  - Added tray items. Feel  free to remove
+  - Phrase is now case-insensitive so type it however.
+  - Multi Phrases
+  - **Added Examples. MAIN ONE: WEB SEARCH**
+  - Allows to send searches to your browser from this GUI. Type in your search and press enter. It will search with your default browser.
+  - **Regular Search** (Normal 1 Search)
+  - **Incognito Search** (Normal 1 Incog Search)
+  - **Regular Multi Search** : Opens multiple tabs with the same search (each a different search engine. Define in that code section.
+  - **Incognito Multi Search** : Same as above but incog mode. 
+  - Plus some other MISC Examples to keep or remove
 ___________________________________________________________________________________________________________
 ListView GUI with Text Wrapping and Hidden Scroll: 
 
