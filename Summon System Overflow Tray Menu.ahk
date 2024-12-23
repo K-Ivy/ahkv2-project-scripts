@@ -3,8 +3,7 @@
 ; Constants
 winTitle := "ahk_class NotifyIconOverflowWindow"
 TrayXPos := 883
-TrayYPos := 820  ; Avoid a Y that overlaps the dock
-                 ; If not, when tray menu focused, dock will hides if set that way.
+TrayYPos := 820
 				 
 ; Hotkey to show and move the system tray menu
 F1:: {
