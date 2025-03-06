@@ -1,4 +1,4 @@
-Notepad++ AutoHotKey Syntax Highlighing. (Made for ease on the yes, but may not be practical for most)
+Notepad++ AutoHotKey Syntax Highlighing. (Made for ease on the eye, but may not be practical for most)
 - Edited (https://www.autohotkey.com/boards/viewtopic.php?f=88&t=50)
 - Made for darker themes/backgrounds so probably wont look very good on light/white backgrounds.
 --- I'm using: https://github.com/nordtheme/notepadplusplus
