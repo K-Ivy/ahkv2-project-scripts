@@ -24,8 +24,7 @@ ListView GUI with Text Wrapping:
 
 https://github.com/user-attachments/assets/bd5a3b4c-6d8e-4aeb-95f4-83ea7f99581e
 ___________________________________________________________________________________________________________
-Summon System Overflow Tray Menu: Just a workaround for Seelen UI;s Windows 10 Bug with the Overflow Menu
-> Brings up the Overflow tray menu at the specified position.
-> 
-https://github.com/user-attachments/assets/31c42263-38cd-4ae8-9248-d84d0b42bccc
+Summon System Overflow Tray Menu: 
+- Just a workaround for Seelen UI's Windows 10 Bug with the Overflow Menu
+- Brings up the Overflow tray menu at the specified position
 ___________________________________________________________________________________________________________
