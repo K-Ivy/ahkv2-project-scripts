@@ -1,3 +1,8 @@
+﻿; ---------------------------------------------------
+; Command Run GUI - v1.2
+; By: IriKay (@TorrentIvy on Github)
+; https://github.com/TorrentIvy/ahkv2-project-scripts
+; ---------------------------------------------------
 #Requires AutoHotkey v2.0
 #SingleInstance Force
 
