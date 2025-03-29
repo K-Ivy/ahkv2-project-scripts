@@ -62,8 +62,6 @@
 	  if (IsSet(CommandGui) && IsObject(CommandGui)) {
       CommandGui.Destroy() 
 	  }
-	   
-	; Set GUI dimensions & Pos
 	
       GuiWidth := 340  
       GuiHeight := 160  
@@ -78,9 +76,9 @@
       CommandGui.SetFont("s16 bold", "Source Code Pro")
       CommandGui.BackColor := "0x1C1C1C"  ; Dark Gray Background Color	   
 	  
-      CommandGui.Add("Text", "x0" " w" GuiWidth " Center c0xd8ccce", "Type Command") ; Title Text
-      CommandEdit := CommandGui.Add("Edit", "x20 y" (InputYPos + 53) " w300 h38 Center c0xdfdada vCommandEdit Background0x5f4548") ; Add 'Input Field' for typing commands
-      CommandGui.Add("Text", "x0 y" (InputYPos + 110) " w" GuiWidth " Center c0x847d7e", "< ? for list >") ; Help Text at bottom of field   
+      CommandGui.Add("Text", "x0" " w" GuiWidth " Center c0xd8ccce", "Type Command")
+      CommandEdit := CommandGui.Add("Edit", "x20 y" (InputYPos + 53) " w300 h38 Center c0xdfdada vCommandEdit Background0x5f4548")
+      CommandGui.Add("Text", "x0 y" (InputYPos + 110) " w" GuiWidth " Center c0x847d7e", "< ? for list >")
 	  
 	 ; Add hidden button to trigger search on Enter
 	
@@ -119,18 +117,13 @@
 	  
       case "r ", "reload", "reload script", "rld": ; As shown by "r ", empty spaces count for matching, so you can make quick alternatives.
         Reload() ; Reload this script when phrase entered.
-       return
-	  
-	; Not Done:  
-    ;  case "? ", "?": ; Open the CommandBind GUI. Lists all the KEYBINDS associated with COMMAND GUI.
-    ;    Reload() ; Reload this script when phrase entered.
-    ;   return	  
+       return 
 	   
     ; The following allows to send searchs to your browser from this GUI. 
     ; When phrase entered, hides CommandGui and in the SAME position, brings up Web Search Gui.
-    ; Type in your search and press enter. It will search with your default broswer. So ensure it's right.	
+    ; Type in your search and press enter. It will search with your default broswer. So ensure it's right in the bit further below code section	
     ; If you do not want the gui to be destoryed upon search, comment WebGui.Destroy() at end in PerformSearch function.	
-	; I'm using excessive shortcuts just for reference.		
+    ; I'm using excessive shortcuts just for reference.		
 			
 		 ; Regular Search. 	
          case "s ", "search", "google", "g ", "web s", "web search": ; Empty spaces count!
