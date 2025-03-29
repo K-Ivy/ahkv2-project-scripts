@@ -36,4 +36,7 @@ ________________________________________________________________________________
 Summon System Overflow Tray Menu: 
 - Just a workaround for Seelen UI's Windows 10 Bug with the Overflow Menu
 - Brings up the Overflow tray menu at the specified position
+> https://discord.com/channels/751144791596597561/1320849759929368657
+![Screenshot From 2025-03-29 11-22-28](https://github.com/user-attachments/assets/ffc59db9-baaa-48fc-a9cf-dddded9d62dd)
+
 ___________________________________________________________________________________________________________
