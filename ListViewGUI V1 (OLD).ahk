@@ -1,3 +1,8 @@
+﻿; ---------------------------------------------------
+; Listview GUI with Wrapping - V1 (OLD)
+; By: IriKay (@TorrentIvy on Github)
+; https://github.com/TorrentIvy/ahkv2-project-scripts
+; ---------------------------------------------------
 ﻿#Requires AutoHotkey v2.0
 
 Alt & W::ListWrapGUI()
