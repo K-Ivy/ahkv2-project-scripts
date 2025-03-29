@@ -35,7 +35,7 @@ ________________________________________________________________________________
 ___________________________________________________________________________________________________________
 Summon System Overflow Tray Menu: (not the most elegant solution)
 - Just a workaround for Seelen UI's Windows 10 Bug with the Overflow Menu
-- Brings up the NATIVE Overflow tray menu at the specified position (has to go through clicking taskbar, expandind the tray and then lauching seelen so it's summonable.)
+- Brings up the NATIVE Overflow tray menu at the specified position (has to go through clicking the taskbar, expanding the tray and then lauching seelen so it's summonable.)
 > Guide on the seelen discord: https://discord.com/channels/751144791596597561/1320849759929368657
 
 ![Screenshot From 2025-03-29 11-22-28](https://github.com/user-attachments/assets/ffc59db9-baaa-48fc-a9cf-dddded9d62dd)
