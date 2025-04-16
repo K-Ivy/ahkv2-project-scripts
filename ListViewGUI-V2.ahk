@@ -151,7 +151,6 @@ $Pause::ListWrapGUI()
     }
 
     SearchBox.OnEvent("Change", (*) => FilterUList())
-    FilterUList()	
 
     ListDir.Show("w" GuiWidth " h" GuiHeight)
     ListDir.OnEvent("Escape", (*) => ListDir.Destroy())
